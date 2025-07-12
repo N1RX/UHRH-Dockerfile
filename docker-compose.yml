@@ -1,7 +1,7 @@
 services:
   uhrh:
     # build: . # Uncomment this line if want to build fresh from source
-    image: ghcr.io/N1RX/uhrh-dockerfile:main
+    image: ghcr.io/n1rx/uhrh-dockerfile:main
     container_name: uhrh
     restart: always
     volumes:
