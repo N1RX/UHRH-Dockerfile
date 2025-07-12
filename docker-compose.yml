@@ -1,0 +1,14 @@
+services:
+  uhrh:
+    # build: . # Uncomment this line if you have a Dockerfile to build the image
+    image: ghcr.io/nilswenning/uhrh-dockerfile:latest
+    container_name: uhrh
+    restart: always
+    volumes:
+      - ./uhrr-data:/uhrh
+    ports:
+      - 8888:8888
+    devices:
+      - /dev/snd:/dev/snd
+      - /dev/ttyUSB0:/dev/ttyUSB0
+
