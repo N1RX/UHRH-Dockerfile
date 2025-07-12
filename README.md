@@ -120,13 +120,19 @@ You may need to adjust device mappings or add your user to `dialout` and `audio`
 
   
 
-## 🛠️ Build From Source (Optional)
-
-  
+  ## 🛠️ Build From Source (Optional)
 
 If you want to build the image yourself instead of pulling from GHCR:
 
-  
+✏️ **Before building**, make sure to uncomment the `build: .` line in your `docker-compose.yml`:
+
+```yaml
+services:
+  uhrh:
+    build: .
+    # image: ghcr.io/n1rx/uhrh-dockerfile:main
+```
+
 
 ```bash
 
