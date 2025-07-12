@@ -1,6 +1,6 @@
 services:
   uhrh:
-    # build: . # Uncomment this line if you have a Dockerfile to build the image
+    # build: . # Uncomment this line if want to build fresh from source
     image: ghcr.io/nilswenning/uhrh-dockerfile:latest
     container_name: uhrh
     restart: always
