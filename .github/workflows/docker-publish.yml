@@ -17,6 +17,7 @@ on:
     paths:
       - 'Dockerfile'
       - 'entrypoint.sh'
+  workflow_dispatch:
 
 
 env:
