@@ -67,7 +67,7 @@ sh get-docker.sh
 
 ```bash
 
-git clone  https://github.com/n1rx/uhrh-dockerfile.git
+git clone https://github.com/N1RX/UHRH-Dockerized.git
 
 cd uhrh-dockerfile
 
@@ -81,7 +81,7 @@ cd uhrh-dockerfile
 
 ```bash
 
-docker compose  up  -d
+sudo docker compose  up  -d
 
 ```
 
