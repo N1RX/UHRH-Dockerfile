@@ -6,17 +6,17 @@ name: Docker
 # documentation.
 
 on:
-  push:
-    branches: [ "main" ]
-    tags: [ 'v*.*.*' ]
-    paths:
-      - 'Dockerfile'
-      - 'entrypoint.sh'      # oder wie deine Entry-Datei genau heißt
-  pull_request:
-    branches: [ "main" ]
-    paths:
-      - 'Dockerfile'
-      - 'entrypoint.sh'
+  # push:
+  #   branches: [ "main" ]
+  #   tags: [ 'v*.*.*' ]
+  #   # paths:
+  #   #   - 'Dockerfile'
+  #   #   - 'entrypoint.sh'      # oder wie deine Entry-Datei genau heißt
+  # pull_request:
+  #   branches: [ "main" ]
+  #   # paths:
+  #   #   - 'Dockerfile'
+  #   #   - 'entrypoint.sh'
   workflow_dispatch:
 
 

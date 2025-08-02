@@ -4,8 +4,11 @@ services:
     image: ghcr.io/n1rx/uhrh-dockerized:main
     container_name: uhrh
     restart: always
+    entrypoint: ["sh", "/entrypoint.sh"]
     volumes:
       - ./uhrr-data:/uhrh
+      - ./entrypoint.sh:/entrypoint.sh:ro
+      - ./setmode-fix.patch:/setmode-fix.patch:ro
     ports:
       - 8888:8888
     devices:
